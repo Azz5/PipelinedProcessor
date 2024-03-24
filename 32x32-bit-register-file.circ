@@ -1685,7 +1685,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabelfont" val="SansSerif plain 12"/>
     <wire from="(730,410)" to="(730,420)"/>
     <wire from="(410,450)" to="(600,450)"/>
-    <wire from="(410,90)" to="(410,110)"/>
     <wire from="(350,120)" to="(390,120)"/>
     <wire from="(530,50)" to="(530,110)"/>
     <wire from="(410,430)" to="(590,430)"/>
@@ -1701,14 +1700,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(520,110)" to="(520,160)"/>
     <wire from="(510,130)" to="(580,130)"/>
     <wire from="(470,110)" to="(520,110)"/>
-    <wire from="(420,250)" to="(440,250)"/>
-    <wire from="(340,90)" to="(410,90)"/>
-    <wire from="(450,210)" to="(510,210)"/>
+    <wire from="(440,160)" to="(440,220)"/>
     <wire from="(680,400)" to="(680,490)"/>
-    <wire from="(440,160)" to="(440,250)"/>
     <wire from="(700,420)" to="(700,530)"/>
     <wire from="(750,390)" to="(770,390)"/>
+    <wire from="(350,80)" to="(410,80)"/>
     <wire from="(600,420)" to="(600,450)"/>
+    <wire from="(350,170)" to="(450,170)"/>
     <wire from="(390,140)" to="(390,390)"/>
     <wire from="(680,400)" to="(720,400)"/>
     <wire from="(520,110)" to="(530,110)"/>
@@ -1722,17 +1720,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(470,130)" to="(510,130)"/>
     <wire from="(430,400)" to="(580,400)"/>
     <wire from="(550,210)" to="(690,210)"/>
-    <wire from="(340,110)" to="(400,110)"/>
-    <wire from="(510,210)" to="(510,220)"/>
+    <wire from="(400,100)" to="(400,120)"/>
+    <wire from="(350,220)" to="(440,220)"/>
     <wire from="(440,390)" to="(580,390)"/>
     <wire from="(430,360)" to="(690,360)"/>
     <wire from="(440,370)" to="(700,370)"/>
     <wire from="(590,420)" to="(590,430)"/>
+    <wire from="(350,100)" to="(400,100)"/>
+    <wire from="(410,80)" to="(410,110)"/>
     <wire from="(620,400)" to="(640,400)"/>
-    <wire from="(340,130)" to="(350,130)"/>
     <wire from="(390,130)" to="(420,130)"/>
     <wire from="(380,140)" to="(390,140)"/>
-    <wire from="(350,120)" to="(350,130)"/>
     <wire from="(240,390)" to="(240,530)"/>
     <wire from="(440,370)" to="(440,390)"/>
     <wire from="(620,390)" to="(720,390)"/>
@@ -1740,10 +1738,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(430,360)" to="(430,400)"/>
     <wire from="(410,110)" to="(420,110)"/>
     <wire from="(410,470)" to="(610,470)"/>
-    <wire from="(400,110)" to="(400,120)"/>
+    <wire from="(450,160)" to="(450,170)"/>
     <wire from="(520,160)" to="(560,160)"/>
     <wire from="(240,530)" to="(700,530)"/>
-    <wire from="(450,160)" to="(450,210)"/>
     <wire from="(560,200)" to="(700,200)"/>
     <comp lib="0" loc="(580,50)" name="Pin">
       <a name="facing" val="west"/>
@@ -1755,23 +1752,31 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="label" val="Arith Selection"/>
     </comp>
-    <comp lib="0" loc="(510,220)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="width" val="32"/>
+    <comp lib="0" loc="(350,100)" name="Pin">
+      <a name="width" val="5"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="BusW"/>
+      <a name="label" val="RB"/>
     </comp>
     <comp lib="0" loc="(410,450)" name="Pin">
       <a name="width" val="2"/>
       <a name="tristate" val="false"/>
       <a name="label" val="Logical Operation Selector"/>
     </comp>
-    <comp lib="0" loc="(340,130)" name="Pin">
+    <comp lib="0" loc="(350,120)" name="Pin">
       <a name="width" val="5"/>
       <a name="tristate" val="false"/>
       <a name="label" val="RW"/>
     </comp>
+    <comp lib="0" loc="(350,170)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="BusW"/>
+    </comp>
     <comp loc="(620,390)" name="32bit-ALU"/>
+    <comp lib="0" loc="(350,220)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Enable Write"/>
+    </comp>
     <comp lib="0" loc="(770,390)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -1787,9 +1792,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(350,490)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="Enable"/>
-    </comp>
-    <comp lib="0" loc="(420,250)" name="Pin">
-      <a name="tristate" val="false"/>
     </comp>
     <comp lib="6" loc="(568,324)" name="Text">
       <a name="text" val="Testing Registar-File + ALU"/>
@@ -1810,15 +1812,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="ALU Selection"/>
     </comp>
     <comp lib="0" loc="(380,140)" name="Clock"/>
-    <comp lib="0" loc="(340,90)" name="Pin">
+    <comp lib="0" loc="(350,80)" name="Pin">
       <a name="width" val="5"/>
       <a name="tristate" val="false"/>
       <a name="label" val="RA"/>
-    </comp>
-    <comp lib="0" loc="(340,110)" name="Pin">
-      <a name="width" val="5"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="RB"/>
     </comp>
   </circuit>
   <circuit name="32bit-ALU">
