@@ -6,7 +6,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="west"/>
     </tool>
     <tool name="Pin">
-      <a name="facing" val="south"/>
+      <a name="facing" val="north"/>
       <a name="width" val="3"/>
     </tool>
     <tool name="Tunnel">
@@ -165,6 +165,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(990,560)" to="(990,580)"/>
     <wire from="(1110,440)" to="(1110,450)"/>
     <wire from="(930,1090)" to="(930,1170)"/>
+    <wire from="(1820,420)" to="(1880,420)"/>
     <wire from="(1200,570)" to="(1210,570)"/>
     <wire from="(910,240)" to="(910,280)"/>
     <wire from="(1650,500)" to="(1650,560)"/>
@@ -224,6 +225,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1720,760)" to="(1760,760)"/>
     <wire from="(590,1140)" to="(590,1150)"/>
     <wire from="(560,1110)" to="(560,1120)"/>
+    <wire from="(1820,460)" to="(1860,460)"/>
     <wire from="(420,410)" to="(420,420)"/>
     <wire from="(1600,470)" to="(1600,490)"/>
     <wire from="(1630,500)" to="(1630,520)"/>
@@ -247,7 +249,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(390,420)" to="(400,420)"/>
     <wire from="(490,360)" to="(500,360)"/>
     <wire from="(1120,410)" to="(1150,410)"/>
-    <wire from="(1760,420)" to="(1780,420)"/>
     <wire from="(940,1130)" to="(950,1130)"/>
     <wire from="(830,1240)" to="(910,1240)"/>
     <wire from="(550,420)" to="(560,420)"/>
@@ -263,6 +264,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1630,710)" to="(1630,720)"/>
     <wire from="(480,1070)" to="(590,1070)"/>
     <wire from="(990,1380)" to="(990,1470)"/>
+    <wire from="(1860,460)" to="(1860,470)"/>
     <wire from="(1240,400)" to="(1240,410)"/>
     <wire from="(1270,510)" to="(1270,520)"/>
     <wire from="(730,1150)" to="(900,1150)"/>
@@ -273,6 +275,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1250,500)" to="(1390,500)"/>
     <wire from="(810,310)" to="(840,310)"/>
     <wire from="(1630,430)" to="(1640,430)"/>
+    <wire from="(1820,420)" to="(1820,460)"/>
     <wire from="(800,1270)" to="(800,1390)"/>
     <wire from="(1480,500)" to="(1510,500)"/>
     <wire from="(840,1230)" to="(840,1350)"/>
@@ -379,6 +382,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(730,1230)" to="(840,1230)"/>
     <wire from="(1480,470)" to="(1480,480)"/>
     <wire from="(1560,780)" to="(1620,780)"/>
+    <wire from="(1760,420)" to="(1820,420)"/>
     <wire from="(1050,1320)" to="(1050,1370)"/>
     <wire from="(490,340)" to="(710,340)"/>
     <wire from="(760,230)" to="(760,270)"/>
@@ -492,6 +496,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(1630,830)" name="Tunnel">
       <a name="width" val="6"/>
       <a name="label" val="Branch-Instructions"/>
+    </comp>
+    <comp lib="0" loc="(1880,420)" name="Tunnel">
+      <a name="width" val="16"/>
+      <a name="label" val="Alu-Out"/>
     </comp>
     <comp lib="0" loc="(1070,470)" name="Tunnel">
       <a name="facing" val="north"/>
@@ -766,6 +774,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="text" val="Jump"/>
       <a name="font" val="SansSerif plain 9"/>
     </comp>
+    <comp lib="0" loc="(1860,470)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+    </comp>
     <comp lib="1" loc="(570,1080)" name="AND Gate">
       <a name="facing" val="north"/>
       <a name="size" val="30"/>
@@ -906,10 +919,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="1" loc="(850,1000)" name="NOT Gate">
       <a name="facing" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1780,420)" name="Tunnel">
-      <a name="width" val="16"/>
-      <a name="label" val="Alu-Out"/>
     </comp>
     <comp lib="0" loc="(980,1150)" name="Tunnel">
       <a name="label" val="ori"/>
