@@ -1,0 +1,7 @@
+lui 30
+ori 2 1 4
+addi 3 0 -2
+movz 7 1 1
+movz 7 1 0
+movn 7 1 0
+movn 7 0 3
