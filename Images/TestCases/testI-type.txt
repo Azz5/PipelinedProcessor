@@ -5,3 +5,15 @@ movz 7 1 1
 movz 7 1 0
 movn 7 1 0
 movn 7 0 3
+add 3 1 1
+sub 4 1 2
+sge 7 2 4
+sgeu 7 2 4
+and 1 3 4
+or 1 1 2
+xor 1 1 3
+nor 2 1 2
+sll 3 4 2
+srl 5 1 2
+sra 5 1 2
+ror 6 3 2
