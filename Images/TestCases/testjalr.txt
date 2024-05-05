@@ -1,0 +1,7 @@
+andi 5 0 1
+andi 2 0 1
+andi 3 0 1
+andi 5 0 1
+andi 1 0 1
+ori 5 0 1
+jalr 6 5 0
