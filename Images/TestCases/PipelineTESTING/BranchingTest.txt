@@ -1,0 +1,6 @@
+ori 1 0 5
+addi 2 2 5
+beq 1 2 61
+and 2 0 0
+jal 0
+addi 7 7 62
